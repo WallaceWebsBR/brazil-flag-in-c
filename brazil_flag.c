@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
+#include <ncurses.h> // LINUX
+// #include <conio.h> // WINDOWS
 
 int main()
 {
@@ -20,6 +21,6 @@ int main()
     for(j=0;j<23;j++) { if(j==11) { printf("\e[0;33m" "0"); } else { printf("\e[0;32m" "0"); } } printf("\n");
     for(j=0;j<23;j++) { printf("\e[0;32m" "0"); } printf("\n");
 
-    printf("\n BR\e[0;33mAZ\e[0;34mIL \e[0;37mFLAG by WallaceWebs #RUMO_AO_HEXA");
+    printf("\n BR\e[0;33mAZ\e[0;34mIL \e[0;37mFLAG by WallaceWebs #RUMO_AO_HEXA\n\n");
     return 0;
 }
