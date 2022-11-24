@@ -1,6 +1,9 @@
 #include <stdio.h>
-#include <ncurses.h> // LINUX
-// #include <conio.h> // WINDOWS
+#ifdef __linux__ 
+  #include <ncurses.h>
+#elif _WIN32
+  #include <conio.h>
+#endif
 
 int main()
 {
